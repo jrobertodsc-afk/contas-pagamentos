@@ -1,0 +1,10 @@
+        self.root.after(0, self._aut_popular_treeview)
+
+        # Vai para aba Autorização
+        try:
+            self.notebook.select(6)  # índice da aba Autorização
+        except: pass
+
+        self.lbl_status_envio.config(
+            text=f"✅ {len(pgtos)} item(ns) enviados para Autorização de Pagamentos",
+            fg="#f472b6")
